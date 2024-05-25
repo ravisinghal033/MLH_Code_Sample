@@ -1,5 +1,5 @@
 # MLH-CodeSamples
-Code samples for MLH Fellowship 2020.
+Code samples for MLH Fellowship 2024.
 
 This repo contains two projects. Remittance App and Verify App.
 
