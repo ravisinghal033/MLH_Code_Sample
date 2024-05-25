@@ -1,0 +1,51 @@
+  
+<div class="maindiv">
+    <div class="logcss">
+        <div class="top">
+            <div class="forms">
+                <div class="cred" ng-model="message">
+                    <h1 style="font-size: 32px">Member Login</h1>
+                    <hr width="75%">
+                </div>
+                <br>
+                <br>
+                <div class="row ">
+                    <div class="col-md-3">
+                        <div class="imgclass">
+                            <img src="/remittance/img/curren.png" class="img-rounded">
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <form method='POST' class="info">
+                            <div class='input-group'>
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input ng-model="email" id="email" type="text" style=" width:250px" class="form-control" placeholder="User ID">
+                            </div>
+                            <br>
+                            <div class="input-group">
+
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input id="password" type="password" style="width:250px" class="form-control" ng-model="password" placeholder="Password">
+
+                            </div>
+                            <br>
+                            <input class="btn btn-success" style="width:290px" type="button" value="Log in" ng-click="submit()" style="font-family: Bookman">
+
+                        </form>
+                        <div class="forgotpass">
+                            <h6><a href='#' style="color:white">Forgot Password?</a></h6>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+
+

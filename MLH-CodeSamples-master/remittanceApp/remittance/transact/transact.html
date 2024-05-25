@@ -1,0 +1,33 @@
+    <div class="bg-overlay">
+        <div class="detail">
+            <div class="row">
+            <div class="col-md-12">
+            <table  class="table table-hover table-responsive">
+                <thead>
+                    <tr>
+                        <th>Account Number</th>
+                        <th>Beneficiary Name</th>
+                        <th>Branch</th>
+                        <th>IFSC</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-class="{'highlight':$index==selectedRow}" ng-click="benefclick(bank,$index)" ng-repeat="bank in banks">
+                        <td ng-hide=true>{{$index}}</td>
+                        <td>{{bank.accountno}}</td>
+                        <td>{{bank.name}}</td>
+                        <td>{{bank.homebranch}}</td>
+                        <td>{{bank.ifsc}}</td>
+                    </tr>
+                </tbody>
+            </table>
+                </div>
+                </div>
+            <div class="row">
+            <div class="col-md-12">
+            <input class="btn button btn-success" ng-show="btnActive" ng-click="proceed()" style="width:auto"  type="button" value="Proceed"  style="font-family: Bookman">
+                </div>
+                </div>
+        </div>
+
+    </div>

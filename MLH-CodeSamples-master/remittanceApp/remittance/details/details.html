@@ -1,0 +1,74 @@
+        <div class="detail">
+    <div class="row">
+        <div class="col-md-12">
+            <h3 style="float: left"><strong>Selected Customer Account</strong></h3>
+            <table class="table  table-responsive">
+                <thead>
+                    <tr>
+                        <th>Account Number</th>
+                        <th>Beneficiary Name</th>
+                        <th>Branch</th>
+                        <th>IFSC</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{accountno}}</td>
+                        <td>{{name}}</td>
+                        <td>{{homebranch}}</td>
+                        <td>{{ifsc}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <form>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="col-md-1">
+                        <label>Amount:</label>
+                    </div>
+                    <div class="col-md-3">
+                        <span><input type="number" ng-change="Value()" ng-model="myValue" /></span>
+                    </div>
+                    <div class="col-md-3">
+                        <label>$</label>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </form>
+
+
+        <div class="col-md-12">
+            <h3 style="float: left"><strong>Selected Beneficiary Account</strong></h3>
+            <table class="table success table-responsive">
+                <thead>
+                    <tr>
+                        <th>Account Number</th>
+                        <th>Beneficiary Name</th>
+                        <th>Branch</th>
+                        <th>IFSC</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{selected_accountno}}</td>
+                        <td>{{selected_name}}</td>
+                        <td>{{selected_homebranch}}</td>
+                        <td>{{selected_ifsc}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <input class="btn button btn-success" ng-show="btnActive" style="width:auto" type="button" value="Confirm" style="font-family: Bookman">
+        </div>
+    </div>
+</div>
